@@ -34,6 +34,15 @@ body{
     background-color: var(--gris-oscuro);
     font-family: var(--sans-serif);
 }
+.encabezado{
+    color: white;
+}
+.cita{
+    color: white;
+}
+.destacado{
+    background-color: #B6B6B6;
+}
 h1{
     font-family: var(--sans-serif);
     font-size: var(--h1);
@@ -74,6 +83,7 @@ p{
 }
 .fila{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     gap:var(--gap-1);
 }
@@ -92,8 +102,8 @@ p{
     box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
 }
 .card-contenedor{
-    display: table;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     text-align: center;
 }
@@ -152,7 +162,7 @@ header{
     padding:var(--padding-1);
 }
 header h1 a{
-    color:var(--verde-oscuro);
+    color:var(--negro);
     text-decoration: none;
 }
 header nav ul{
@@ -192,4 +202,8 @@ footer nav ul li a{
     text-decoration: none;
     color: var(--gris-claro);
     padding: var(--padding-1);
+}
+footer nav ul li a:hover{
+    background-color:var(--verde-claro);
+    color: black;
 }
